@@ -1,23 +1,8 @@
-let northX;
-let westY;
+let northX, westY;
 // var mic;
-let eagleEye1;
-let eagleEye2;
-let eagleEye3;
-let eagleEye4;
-let eagleEye5;
-let eagleEye6;
-let eagleEye7;
-let eagleEye8;
-let eagleEye9;
-let musicNote1;
-let musicNote2;
-let musicNote3;
-let musicNote4;
-let art1;
-let art2;
-let art3;
-let art4;
+let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9;
+let musicNote1, musicNote2, musicNote3, musicNote4;
+let art1, art2, art3, art4;
 function setup() {
   art1 = loadImage('assets/Starry Night, by Vincent Van Gogh.png');
   art2 = loadImage('assets/The Scream, by Edvard Munch.png');
