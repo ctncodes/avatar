@@ -12,6 +12,6 @@ class TailFeatherPattern{
     ellipseMode(CENTER);
     fill(0,105,62);
     ellipse(width*0,height*0,width/16,height/16);
-    pop;
+    pop();
   }
 }
