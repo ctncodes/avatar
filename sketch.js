@@ -122,7 +122,7 @@ function drawTheMorning(xPos,yPos) {
 }
 function drawBeautifulBody() {
   //Tailfeathers
-  fill(82,40,168);
+  fill(72,61,139);
   noStroke();
   arc(131.25,300,525,525,PI,2*PI);
   // ellipseMode(RADIUS);
