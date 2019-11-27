@@ -9,10 +9,10 @@ function setup() {
   art3 = loadImage('assets/Landscape Near Murnau, by Alexej von Jawlensky.png');
   art4 = loadImage('assets/Varoom!, by Roy Lichtenstein.png');
   createCanvas(600,600);
-  // musicNote1 = new BeamedNote(300,225);
-  // musicNote2 = new WholeNote(75,75);
-  // musicNote3 = new HalfNote(37.5,375);
-  // musicNote4 = new QuarterNote(225,525);
+  musicNote1 = new BeamedNote(300,225);
+  musicNote2 = new WholeNote(75,75);
+  musicNote3 = new HalfNote(37.5,375);
+  musicNote4 = new QuarterNote(225,525);
   // mic = new p5.AudioIn()
   eagleEye1 = new TailFeatherPattern(width*5/64,height*13/64);
   eagleEye2 = new TailFeatherPattern(width*5/64,height*23/64);
@@ -68,14 +68,14 @@ function draw() {
     //Beak
     fill(218,165,32);
   triangle(468,120,468,180,528,150);
-  // musicNote1.display();
-  // musicNote1.move();
-  // musicNote2.display();
-  // musicNote2.move();
-  // musicNote3.display();
-  // musicNote3.move();
-  // musicNote4.display();
-  // musicNote4.move();
+  musicNote1.display();
+  musicNote1.move();
+  musicNote2.display();
+  musicNote2.move();
+  musicNote3.display();
+  musicNote3.move();
+  musicNote4.display();
+  musicNote4.move();
   }
 }
 function drawTheMorning(xPos,yPos) {
