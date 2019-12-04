@@ -5,7 +5,7 @@ class BeamedNote{
   }
   display(){
     push();
-    noStroke();    
+    noStroke();
     fill(0);
     translate(this.xPos,this.yPos);
     ellipse(width/16,height/16,width/10,height/12);
@@ -16,10 +16,10 @@ class BeamedNote{
     pop();
   }
   move(){
-    if (this.xPos <= height*1.35){
+    if (this.xPos <= height*2){
     this.xPos++;
     } else {
-      this.xPos = -height*.35;
+      this.xPos = -height*1;
     }
   }
 }
