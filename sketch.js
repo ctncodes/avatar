@@ -4,7 +4,7 @@ let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7,
 let musicNote1, musicNote2, musicNote3, musicNote4;
 let art1, art2, art3, art4;
 function setup() {
-  art1 = loadImage('assets/Monsters, Inc. At Night.png');
+  art1 = loadImage('assets/Monsters, Inc. At Night 2.png');
   art2 = loadImage('assets/Big Hero 6 At Evening 2.png');
   art3 = loadImage('assets/Toy Story At Daytime.png');
   art4 = loadImage('assets/Varoom!, by Roy Lichtenstein.png');
@@ -37,7 +37,7 @@ function draw() {
   }
   drawBeautifulBody();
   drawBeautifulMind();
-  drawPedestal();
+  // drawPedestal();
   if (mouseIsPressed == true) {
     //Waddle
     fill(227,38,54);

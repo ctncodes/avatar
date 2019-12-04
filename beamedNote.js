@@ -8,11 +8,11 @@ class BeamedNote{
     noStroke();
     fill(0);
     translate(this.xPos,this.yPos);
-    ellipse(width/16,height/16,width/10,height/12);
-    ellipse(width*35/160,height/16,width/10,height/12);
-    rect(width*7/80,-height/8,width*29/160,height/12);
-    rect(width*7/80,-height/8,width/40,height*3/16);
-    rect(width*39/160,-height/8,width/40,height*3/16);
+    ellipse(37.5,37.5,60,50);
+    ellipse(131.25,37.5,60,50);
+    rect(52.5,-75,108.75,50);
+    rect(52.5,-75,15,112.5);
+    rect(146.25,-75,15,112.5);
     pop();
   }
   move(){
