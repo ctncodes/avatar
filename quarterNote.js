@@ -8,8 +8,8 @@ class QuarterNote{
     noStroke();
     fill(0);
     translate(this.xPos,this.yPos);
-    ellipse(width/16,height/16,width/10,height/12);
-    rect(width*7/80,-height/8,width/40,height*3/16);
+    ellipse(37.5,37.5,60,50);
+    rect(52.5,-75,15,112.5);
     pop();
   }
   move(){

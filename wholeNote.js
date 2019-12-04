@@ -9,7 +9,7 @@ class WholeNote{
     stroke(0);
     noFill();
     translate(this.xPos,this.yPos);
-    ellipse(width/16,height/16,width/10,height/12);
+    ellipse(37.5,37.5,60,50);
     pop();
   }
   move(){
