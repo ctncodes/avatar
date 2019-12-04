@@ -127,7 +127,7 @@ function drawBeautifulBody() {
   //Right Wing
   fill(0,71,171);
   noStroke();
-  arc(width/2,height/2,width*3/8,height*3/8,0,PI);
+  arc(300,300,225,225,0,PI);
   eagleEye1.display();
   eagleEye2.display();
   eagleEye3.display();
