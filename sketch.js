@@ -4,25 +4,27 @@ let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7,
 let musicNote1, musicNote2, musicNote3, musicNote4;
 let art1, art2, art3, art4;
 function setup() {
-  art1 = loadImage('assets/Starry Night, by Vincent Van Gogh.png');
-  art2 = loadImage('assets/The Scream, by Edvard Munch.png');
-  art3 = loadImage('assets/Landscape Near Murnau, by Alexej von Jawlensky.png');
+  art1 = loadImage('assets/Monsters, Inc. At Night 2.png');
+  art2 = loadImage('assets/Big Hero 6 At Evening 2.png');
+  art3 = loadImage('assets/Toy Story At Daytime.png');
   art4 = loadImage('assets/Varoom!, by Roy Lichtenstein.png');
-  createCanvas(600,600);
+  createCanvas(windowWidth,windowHeight);
   musicNote1 = new BeamedNote(300,225);
   musicNote2 = new WholeNote(75,75);
   musicNote3 = new HalfNote(37.5,375);
   musicNote4 = new QuarterNote(225,525);
   // mic = new p5.AudioIn()
-  eagleEye1 = new TailFeatherPattern(width*5/64,height*13/64);
-  eagleEye2 = new TailFeatherPattern(width*5/64,height*23/64);
-  eagleEye3 = new TailFeatherPattern(width*7/32,height/8);
-  eagleEye4 = new TailFeatherPattern(width*7/32,height*9/32);
-  eagleEye5 = new TailFeatherPattern(width*7/32,height*7/16);
-  eagleEye6 = new TailFeatherPattern(width*23/64,height*13/64);
-  eagleEye7 = new TailFeatherPattern(width*23/64,height*23/64);
-  eagleEye8 = new TailFeatherPattern(width/2,height*9/32);
-  eagleEye9 = new TailFeatherPattern(width/2,height*7/16);
+  eagleEye1 = new TailFeatherPattern(46.875,121.875);
+  eagleEye2 = new TailFeatherPattern(46.875,215.625);
+  eagleEye3 = new TailFeatherPattern(131.25,75);
+  eagleEye4 = new TailFeatherPattern(131.25,168.75);
+  eagleEye5 = new TailFeatherPattern(131.25,262.5);
+  eagleEye6 = new TailFeatherPattern(215.625,121.875);
+  eagleEye7 = new TailFeatherPattern(215.625,215.625);
+  eagleEye8 = new TailFeatherPattern(300,168.75);
+  eagleEye9 = new TailFeatherPattern(300,262.5);
+  eagleEye10 = new TailFeatherPattern(-37.5,168.75);
+  eagleEye11 = new TailFeatherPattern(-37.5,262.5);
   // mic.start();
 }
 function draw() {
@@ -35,7 +37,7 @@ function draw() {
   }
   drawBeautifulBody();
   drawBeautifulMind();
-  drawPedestal();
+  // drawPedestal();
   if (mouseIsPressed == true) {
     //Waddle
     fill(227,38,54);
@@ -127,7 +129,7 @@ function drawBeautifulBody() {
   //Right Wing
   fill(0,71,171);
   noStroke();
-  arc(width/2,height/2,width*3/8,height*3/8,0,PI);
+  arc(300,300,225,225,0,PI);
   eagleEye1.display();
   eagleEye2.display();
   eagleEye3.display();
@@ -137,6 +139,8 @@ function drawBeautifulBody() {
   eagleEye7.display();
   eagleEye8.display();
   eagleEye9.display();
+  eagleEye10.display();
+  eagleEye11.display();
 }
 function drawBeautifulMind() {
   //Comb

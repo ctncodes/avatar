@@ -9,14 +9,14 @@ class WholeNote{
     stroke(0);
     noFill();
     translate(this.xPos,this.yPos);
-    ellipse(width/16,height/16,width/10,height/12);
+    ellipse(37.5,37.5,60,50);
     pop();
   }
   move(){
-    if (this.xPos <= height*1.35){
+    if (this.xPos <= height*2){
     this.xPos++;
     } else {
-      this.xPos = -height*1.35;
+      this.xPos = -height*1;
     }
   }
 }
