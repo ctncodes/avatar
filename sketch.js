@@ -211,49 +211,49 @@ function drawPedestal() {
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
-      disneysPotC.setVolume(0.75);
+      disneysPotC.setVolume(0.25);
       disneysPotC.play();
     } else if (key === '!') {
       disneysPotC.stop();
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
     if (key === '2') {
-      disneySquareEnixsKH.setVolume(0.75);
+      disneySquareEnixsKH.setVolume(0.35);
       disneySquareEnixsKH.play();
     } else if (key === '@') {
       disneySquareEnixsKH.stop();
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
     if (key === '3') {
-      disneysHercules.setVolume(0.75);
+      disneysHercules.setVolume(0.35);
       disneysHercules.play();
     } else if (key === '#') {
       disneysHercules.stop();
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
     if (key === '4') {
-      disneyPixarsToyStory.setVolume(0.75);
+      disneyPixarsToyStory.setVolume(0.35);
       disneyPixarsToyStory.play();
     } else if (key === '$') {
       disneyPixarsToyStory.stop();
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
     if (key === '5') {
-      disneysBigHero6.setVolume(0.75);
+      disneysBigHero6.setVolume(0.25);
       disneysBigHero6.play();
     } else if (key === '%') {
       disneysBigHero6.stop();
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
     if (key === '6') {
-      disneySquareEnixsKH.setVolume(0.75);
+      disneySquareEnixsKH.setVolume(0.35);
       disneySquareEnixsKH.play();
     } else if (key === '^') {
       disneySquareEnixsKH.stop();
     }
   } else {
     if (key === '7') {
-      disneyPixarsMonstersInc.setVolume(0.75);
+      disneyPixarsMonstersInc.setVolume(0.5);
       disneyPixarsMonstersInc.play();
     } else if (key === '&') {
       disneyPixarsMonstersInc.stop();
