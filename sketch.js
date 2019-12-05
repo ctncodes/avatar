@@ -1,13 +1,23 @@
 let northX, westY;
 // var mic;
-let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9;
-let musicNote1, musicNote2, musicNote3, musicNote4;
-let art1, art2, art3, art4;
+let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
+let musicNote1, musicNote2, musicNote3, musicNote4, art1, art2, art3, art4;
+function preload() {
+  soundFormats('mp3');
+  disneyPixarsToyStory = loadSound("assets/Toy Box Theme.mp3");
+  disneysHercules = loadSound("assets/Olympus Coliseum.mp3");
+  disneyPixarsMonstersInc = loadSound("assets/Monstropolis (Offices).mp3");
+  disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
+  disneysPotC = loadSound("assets/The Caribbean - Davy Jones.mp3");
+  disneysBigHero6 = loadSound("assets/San Fransokyo - Hiro's VR Course.mp3");
+}
 function setup() {
-  art1 = loadImage('assets/Monsters, Inc. At Night 2.png');
-  art2 = loadImage('assets/Big Hero 6 At Evening 2.png');
-  art3 = loadImage('assets/Toy Story At Daytime.png');
-  art4 = loadImage('assets/Varoom!, by Roy Lichtenstein.png');
+  art1 = loadImage("assets/At World's End At Night.png");
+  art2 = loadImage("assets/Twilight Town At Twilight.png");
+  art3 = loadImage("assets/Hercules At Morning.png");
+  art4 = loadImage("assets/Toy Story At Daytime.png");
+  art5 = loadImage("assets/Big Hero 6 At Evening.png");
+  art6 = loadImage("assets/Monsters, Inc. At Night 2.png");
   createCanvas(windowWidth,windowHeight);
   musicNote1 = new BeamedNote(300,225);
   musicNote2 = new WholeNote(75,75);
@@ -81,29 +91,30 @@ function draw() {
   }
 }
 function drawTheMorning(xPos,yPos) {
-  // if (constrain(height-micLevel*height*5,0,height)<height/3) {
-  //   fill(255,204,51);
-  //   background(135,206,235);
-  // } else if (constrain(height-micLevel*height*5,0, height)>height*2/3) {
-  //   fill(255,90,37);
-  //   background(25,25,112);
-  // } else {
-  //   fill(255,147,44);
-  //   background(80,116,174);
-  // }
-  // circle(487.5,constrain(height-micLevel*height*5,0, height),225);
+  if (mouseX <= width/7) {
+    background(art1);
+  } else if (mouseX > width/7 && mouseX <= width*2/7) {
+    background(art2);
+  } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
+    background(art3);
+  } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
+    background(art4);
+  } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
+    background(art5);
+  } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
+    background(art2);
+  } else {
+    background(art6);
+  }
   if (mouseY<height/3) {
     fill(255,204,51);
     // background(135,206,235);
-    background(art3);
   } else if (mouseY>height*2/3) {
     fill(255,90,37);
     // background(25,25,112);
-    background(art1);
   } else  {
     fill(255,147,44);
     // background(80,116,174);
-    background(art2);
   }
   circle(xPos,yPos,112.5);
 }
@@ -112,16 +123,6 @@ function drawBeautifulBody() {
   fill(72,61,139);
   noStroke();
   arc(131.25,300,525,525,PI,2*PI);
-  // ellipseMode(RADIUS);
-  // fill(255);
-  // ellipse(131.25,75,37.5,37.5);
-  // ellipseMode(CENTER);
-  // fill(100);
-  // ellipse(131.25,75,37.5,37.5);
-  // //Left Wing
-  // fill(0,71,171);
-  // noStroke();
-  // arc(525,300,225,225,0,PI);
   //Body
   fill(111,78,55);
   noStroke();
@@ -205,4 +206,61 @@ function drawPedestal() {
   fill(165,42,42);
   square(150,480,120);
   square(330,480,120);
+}
+
+function keyTyped() {
+  if (mouseX <= width/7) {
+    if (key === '1') {
+      disneysPotC.setVolume(0.75);
+      disneysPotC.play();
+    } else if (key === '!') {
+      disneysPotC.stop();
+    }
+  } else if (mouseX > width/7 && mouseX <= width*2/7) {
+    if (key === '2') {
+      disneySquareEnixsKH.setVolume(0.75);
+      disneySquareEnixsKH.play();
+    } else if (key === '@') {
+      disneySquareEnixsKH.stop();
+    }
+  } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
+    if (key === '3') {
+      disneysHercules.setVolume(0.75);
+      disneysHercules.play();
+    } else if (key === '#') {
+      disneysHercules.stop();
+    }
+  } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
+    if (key === '4') {
+      disneyPixarsToyStory.setVolume(0.75);
+      disneyPixarsToyStory.play();
+    } else if (key === '$') {
+      disneyPixarsToyStory.stop();
+    }
+  } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
+    if (key === '5') {
+      disneysBigHero6.setVolume(0.75);
+      disneysBigHero6.play();
+    } else if (key === '%') {
+      disneysBigHero6.stop();
+    }
+  } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
+    if (key === '6') {
+      disneySquareEnixsKH.setVolume(0.75);
+      disneySquareEnixsKH.play();
+    } else if (key === '^') {
+      disneySquareEnixsKH.stop();
+    }
+  } else {
+    if (key === '7') {
+      disneyPixarsMonstersInc.setVolume(0.75);
+      disneyPixarsMonstersInc.play();
+    } else if (key === '&') {
+      disneyPixarsMonstersInc.stop();
+    }
+  }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
