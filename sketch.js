@@ -1,7 +1,7 @@
-let northX, westY;
-// var mic;
-let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
-let musicNote1, musicNote2, musicNote3, musicNote4, art1, art2, art3, art4;
+let northX, westY, musicNote1, musicNote2, musicNote3,
+ musicNote4, art1, art2, art3, art4;
+let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5,
+eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
 function preload() {
   soundFormats('mp3');
   disneyPixarsToyStory = loadSound("assets/Toy Box Theme.mp3");
@@ -23,7 +23,6 @@ function setup() {
   musicNote2 = new WholeNote(75,75);
   musicNote3 = new HalfNote(37.5,375);
   musicNote4 = new QuarterNote(225,525);
-  // mic = new p5.AudioIn()
   eagleEye1 = new TailFeatherPattern(46.875,121.875);
   eagleEye2 = new TailFeatherPattern(46.875,215.625);
   eagleEye3 = new TailFeatherPattern(131.25,75);
@@ -35,20 +34,14 @@ function setup() {
   eagleEye9 = new TailFeatherPattern(300,262.5);
   eagleEye10 = new TailFeatherPattern(-37.5,168.75);
   eagleEye11 = new TailFeatherPattern(-37.5,262.5);
-  // mic.start();
 }
 function draw() {
   northX=mouseX;
   westY=mouseY;
-  // micLevel = mic.getLevel(.9);
   drawTheMorning(northX,westY);
-  if (mouseIsPressed == true) {
-    background(art4);
-  }
   drawBeautifulBody();
   drawBeautifulMind();
-  // drawPedestal();
-  if (mouseIsPressed == true) {
+  if (key == '1' || key == '2' || key == '3' || key == '4' || key == '5' || key == '6' || key == '7') {
     //Waddle
     fill(227,38,54);
     beginShape();
@@ -79,7 +72,8 @@ function draw() {
     endShape();
     //Beak
     fill(218,165,32);
-  triangle(468,120,468,180,528,150);
+    triangle(468,120,468,180,528,150);
+  }
   musicNote1.display();
   musicNote1.move();
   musicNote2.display();
@@ -88,7 +82,6 @@ function draw() {
   musicNote3.move();
   musicNote4.display();
   musicNote4.move();
-  }
 }
 function drawTheMorning(xPos,yPos) {
   if (mouseX <= width/7) {
@@ -108,13 +101,10 @@ function drawTheMorning(xPos,yPos) {
   }
   if (mouseY<height/3) {
     fill(255,204,51);
-    // background(135,206,235);
   } else if (mouseY>height*2/3) {
     fill(255,90,37);
-    // background(25,25,112);
   } else  {
     fill(255,147,44);
-    // background(80,116,174);
   }
   circle(xPos,yPos,112.5);
 }
@@ -151,18 +141,10 @@ function drawBeautifulMind() {
   curveVertex(465,120);
   curveVertex(465,42);
   curveVertex(435,42);
-  // curveVertex(435,120);
-  // curveVertex(435,120);
-  // endShape();
-  // beginShape();
   curveVertex(435,120);
   curveVertex(435,120);
   curveVertex(435,30);
   curveVertex(405,30);
-  // curveVertex(405,120);
-  // curveVertex(405,120);
-  // endShape();
-  // beginShape();
   curveVertex(405,120);
   curveVertex(405,120);
   curveVertex(405,42);
@@ -180,19 +162,6 @@ function drawBeautifulMind() {
   curveVertex(375,300);
   curveVertex(375,300);
   endShape();
-  // //Waddle
-  // fill(227,38,54);
-  // beginShape();
-  // curveVertex(468,168);
-  // curveVertex(468,168);
-  // curveVertex(468,210);
-  // curveVertex(492,204);
-  // curveVertex(468,168);
-  // curveVertex(468,168);
-  // endShape();
-  // //Beak
-  // fill(218,165,32);
-  // triangle(468,120,468,180,528,150);
   //Eyes
   fill(0);
   circle(420,105,24);
@@ -213,49 +182,49 @@ function keyTyped() {
     if (key === '1') {
       disneysPotC.setVolume(0.25);
       disneysPotC.play();
-    } else if (key === '!') {
+    } else if (key === 'a') {
       disneysPotC.stop();
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
     if (key === '2') {
       disneySquareEnixsKH.setVolume(0.35);
       disneySquareEnixsKH.play();
-    } else if (key === '@') {
+    } else if (key === 'b') {
       disneySquareEnixsKH.stop();
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
     if (key === '3') {
       disneysHercules.setVolume(0.35);
       disneysHercules.play();
-    } else if (key === '#') {
+    } else if (key === 'c') {
       disneysHercules.stop();
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
     if (key === '4') {
       disneyPixarsToyStory.setVolume(0.35);
       disneyPixarsToyStory.play();
-    } else if (key === '$') {
+    } else if (key === 'd') {
       disneyPixarsToyStory.stop();
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
     if (key === '5') {
       disneysBigHero6.setVolume(0.25);
       disneysBigHero6.play();
-    } else if (key === '%') {
+    } else if (key === 'e') {
       disneysBigHero6.stop();
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
     if (key === '6') {
       disneySquareEnixsKH.setVolume(0.35);
       disneySquareEnixsKH.play();
-    } else if (key === '^') {
+    } else if (key === 'f') {
       disneySquareEnixsKH.stop();
     }
   } else {
     if (key === '7') {
       disneyPixarsMonstersInc.setVolume(0.5);
       disneyPixarsMonstersInc.play();
-    } else if (key === '&') {
+    } else if (key === 'g') {
       disneyPixarsMonstersInc.stop();
     }
   }
