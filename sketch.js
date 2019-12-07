@@ -1,7 +1,7 @@
 let northX, westY, musicNote1, musicNote2, musicNote3,
  musicNote4, art1, art2, art3, art4;
 let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5,
-eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
+ eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
 function preload() {
   soundFormats('mp3');
   disneyPixarsToyStory = loadSound("assets/Toy Box Theme.mp3");
