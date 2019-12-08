@@ -39,6 +39,8 @@ function draw() {
   northX=mouseX;
   westY=mouseY;
   drawTheMorning(northX,westY);
+  push();
+  translate(windowWidth/2 - 300, windowHeight - 450);
   drawBeautifulBody();
   drawBeautifulMind();
   if (key == '1' || key == '2' || key == '3' || key == '4' || key == '5' || key == '6' || key == '7') {
@@ -74,6 +76,7 @@ function draw() {
     fill(218,165,32);
     triangle(468,120,468,180,528,150);
   }
+  pop();
   musicNote1.display();
   musicNote1.move();
   musicNote2.display();
