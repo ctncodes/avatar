@@ -10,13 +10,13 @@ function preload() {
   disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
   disneysPotC = loadSound("assets/The Caribbean - Davy Jones.mp3");
   disneysBigHero6 = loadSound("assets/San Fransokyo - Hiro's VR Course.mp3");
-  prSong1 = loadSound("Peacock Dance Display - Sound 1.mp3");
-  prSong2 = loadSound("Peacock Dance Display - Sound 2.mp3");
-  prSong3 = loadSound("Peacock Dance Display - Sound 3.mp3");
-  prSong4 = loadSound("Peacock Dance Display - Sound 4.mp3");
-  prSong5 = loadSound("Peacock Dance Display - Sound 5.mp3");
-  prSong6 = loadSound("Peacock Dance Display - Sound 6.mp3");
-  prSong7 = loadSound("Peacock Dance Display - Sound 7.mp3");
+  prSong1 = loadSound("assets/Peacock Dance Display - Sound 1.mp3");
+  prSong2 = loadSound("assets/Peacock Dance Display - Sound 2.mp3");
+  prSong3 = loadSound("assets/Peacock Dance Display - Sound 3.mp3");
+  prSong4 = loadSound("assets/Peacock Dance Display - Sound 4.mp3");
+  prSong5 = loadSound("assets/Peacock Dance Display - Sound 5.mp3");
+  prSong6 = loadSound("assets/Peacock Dance Display - Sound 6.mp3");
+  prSong7 = loadSound("assets/Peacock Dance Display - Sound 7.mp3");
 }
 function setup() {
   art1 = loadImage("assets/At World's End At Night.png");
