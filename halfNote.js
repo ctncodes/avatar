@@ -7,10 +7,10 @@ class HalfNote{
     push();
     translate(this.xPos,this.yPos);
     strokeWeight(4);
-    stroke(0);
-    fill(0);
-    rect(52.5,-75,15,112.5);
+    stroke(255);
     fill(255);
+    rect(52.5,-75,15,112.5);
+    fill(0);
     ellipse(37.5,37.5,60,50);
     pop();
   }

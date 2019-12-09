@@ -6,7 +6,7 @@ class WholeNote{
   display(){
     push();
     strokeWeight(6);
-    stroke(0);
+    stroke(255);
     noFill();
     translate(this.xPos,this.yPos);
     ellipse(37.5,37.5,60,50);

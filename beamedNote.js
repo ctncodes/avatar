@@ -6,7 +6,7 @@ class BeamedNote{
   display(){
     push();
     noStroke();
-    fill(0);
+    fill(255);
     translate(this.xPos,this.yPos);
     ellipse(37.5,37.5,60,50);
     ellipse(131.25,37.5,60,50);

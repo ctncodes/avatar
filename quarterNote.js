@@ -6,7 +6,7 @@ class QuarterNote{
   display(){
     push();
     noStroke();
-    fill(0);
+    fill(255);
     translate(this.xPos,this.yPos);
     ellipse(37.5,37.5,60,50);
     rect(52.5,-75,15,112.5);
