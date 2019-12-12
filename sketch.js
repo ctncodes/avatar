@@ -19,6 +19,7 @@ function preload() {
   prSong7 = loadSound("assets/Peacock Dance Display - Sound 7.mp3");
 }
 function setup() {
+  noCursor();
   art1 = loadImage("assets/At World's End At Night.png");
   art2 = loadImage("assets/Twilight Town At Twilight.png");
   art3 = loadImage("assets/Hercules At Morning.png");
