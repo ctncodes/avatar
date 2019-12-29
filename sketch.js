@@ -4,7 +4,7 @@ let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5,
  eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
 function preload() {
   soundFormats('mp3');
-  disneyPixarsToyStory = loadSound("assets/Toy Box Theme.mp3");
+  disneyPixarsToyStory = loadSound("assets/Toy Story 2 - You've Got A Friend in Me (Wheezy's version)");
   disneysHercules = loadSound("assets/Olympus Coliseum.mp3");
   disneyPixarsMonstersInc = loadSound("assets/Monstropolis (Offices).mp3");
   disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
