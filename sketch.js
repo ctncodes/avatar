@@ -6,10 +6,10 @@ function preload() {
   soundFormats('mp3');
   disneyPixarsToyStory = loadSound("assets/Toy Story 2 - You've Got A Friend in Me (Wheezy's version)");
   disneysHercules = loadSound("assets/Olympus Coliseum.mp3");
-  disneyPixarsMonstersInc = loadSound("assets/Monstropolis (Offices).mp3");
+  disneyPixarsMonstersInc = loadSound("assets/Monsters, Inc. - Put that thing back where it came from, or so help me!.mp3");
   disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
   disneysPotC = loadSound("assets/The Caribbean - Davy Jones.mp3");
-  disneysBigHero6 = loadSound("assets/San Fransokyo - Hiro's VR Course.mp3");
+  disneysBigHero6 = loadSound("assets/Big Hero 6 - Immortals.mp3");
   prSong1 = loadSound("assets/Peacock Dance Display - Sound 1.mp3");
   prSong2 = loadSound("assets/Peacock Dance Display - Sound 2.mp3");
   prSong3 = loadSound("assets/Peacock Dance Display - Sound 3.mp3");
