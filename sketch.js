@@ -5,7 +5,7 @@ let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5,
 function preload() {
   soundFormats('mp3');
   disneyPixarsToyStory = loadSound("assets/Toy Story 2 - You've Got A Friend in Me (Wheezy's version)");
-  disneysHercules = loadSound("assets/Olympus Coliseum.mp3");
+  disneysHercules = loadSound("assets/Hercules - The End.mp3");
   disneyPixarsMonstersInc = loadSound("assets/Monsters, Inc. - Put that thing back where it came from, or so help me!.mp3");
   disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
   disneysPotC = loadSound("assets/The Caribbean - Davy Jones.mp3");
@@ -191,73 +191,73 @@ function drawPedestal() {
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
-      disneysPotC.setVolume(0.25);
+      disneysPotC.setVolume(0.5);
       disneysPotC.play();
-      prSong1.setVolume(0.25);
-      prSong1.loop();
+      // prSong1.setVolume(0.25);
+      // prSong1.loop();
     } else if (key === 'a') {
       disneysPotC.stop();
-      prSong1.stop();
+      // prSong1.stop();
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
     if (key === '2') {
-      disneySquareEnixsKH.setVolume(0.35);
+      disneySquareEnixsKH.setVolume(0.7);
       disneySquareEnixsKH.play();
-      prSong2.setVolume(0.35);
-      prSong2.loop();
+      // prSong2.setVolume(0.35);
+      // prSong2.loop();
     } else if (key === 'b') {
       disneySquareEnixsKH.stop();
-      prSong2.stop();
+      // prSong2.stop();
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
     if (key === '3') {
-      disneysHercules.setVolume(0.35);
+      disneysHercules.setVolume(0.7);
       disneysHercules.play();
-      prSong3.setVolume(0.35);
-      prSong3.loop();
+      // prSong3.setVolume(0.35);
+      // prSong3.loop();
     } else if (key === 'c') {
       disneysHercules.stop();
-      prSong3.stop();
+      // prSong3.stop();
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
     if (key === '4') {
-      disneyPixarsToyStory.setVolume(0.35);
+      disneyPixarsToyStory.setVolume(0.7);
       disneyPixarsToyStory.play();
-      prSong4.setVolume(0.35);
-      prSong4.loop();
+      // prSong4.setVolume(0.35);
+      // prSong4.loop();
     } else if (key === 'd') {
       disneyPixarsToyStory.stop();
-      prSong4.stop();
+      // prSong4.stop();
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
     if (key === '5') {
-      disneysBigHero6.setVolume(0.25);
+      disneysBigHero6.setVolume(0.5);
       disneysBigHero6.play();
-      prSong5.setVolume(0.25);
-      prSong5.loop();
+      // prSong5.setVolume(0.25);
+      // prSong5.loop();
     } else if (key === 'e') {
       disneysBigHero6.stop();
-      prSong5.stop();
+      // prSong5.stop();
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
     if (key === '6') {
-      disneySquareEnixsKH.setVolume(0.35);
+      disneySquareEnixsKH.setVolume(0.7);
       disneySquareEnixsKH.play();
-      prSong6.setVolume(0.35);
-      prSong6.loop();
+      // prSong6.setVolume(0.35);
+      // prSong6.loop();
     } else if (key === 'f') {
       disneySquareEnixsKH.stop();
-      prSong6.stop();
+      // prSong6.stop();
     }
   } else {
     if (key === '7') {
-      disneyPixarsMonstersInc.setVolume(0.5);
+      disneyPixarsMonstersInc.setVolume(1.0);
       disneyPixarsMonstersInc.play();
-      prSong7.setVolume(0.5);
-      prSong7.loop();
+      // prSong7.setVolume(0.5);
+      // prSong7.loop();
     } else if (key === 'g') {
       disneyPixarsMonstersInc.stop();
-      prSong7.stop();
+      // prSong7.stop();
     }
   }
 }
