@@ -191,7 +191,7 @@ function drawPedestal() {
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
-      disneysPotC.setVolume(0.5);
+      disneysPotC.setVolume(0.375);
       disneysPotC.play();
       // prSong1.setVolume(0.25);
       // prSong1.loop();
@@ -201,7 +201,7 @@ function keyTyped() {
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
     if (key === '2') {
-      disneySquareEnixsKH.setVolume(0.7);
+      disneySquareEnixsKH.setVolume(0.525);
       disneySquareEnixsKH.play();
       // prSong2.setVolume(0.35);
       // prSong2.loop();
@@ -211,7 +211,7 @@ function keyTyped() {
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
     if (key === '3') {
-      disneysHercules.setVolume(0.7);
+      disneysHercules.setVolume(0.525);
       disneysHercules.play();
       // prSong3.setVolume(0.35);
       // prSong3.loop();
@@ -221,7 +221,7 @@ function keyTyped() {
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
     if (key === '4') {
-      disneyPixarsToyStory.setVolume(0.7);
+      disneyPixarsToyStory.setVolume(0.525);
       disneyPixarsToyStory.play();
       // prSong4.setVolume(0.35);
       // prSong4.loop();
@@ -231,7 +231,7 @@ function keyTyped() {
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
     if (key === '5') {
-      disneysBigHero6.setVolume(0.5);
+      disneysBigHero6.setVolume(0.375);
       disneysBigHero6.play();
       // prSong5.setVolume(0.25);
       // prSong5.loop();
@@ -241,7 +241,7 @@ function keyTyped() {
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
     if (key === '6') {
-      disneySquareEnixsKH.setVolume(0.7);
+      disneySquareEnixsKH.setVolume(0.525);
       disneySquareEnixsKH.play();
       // prSong6.setVolume(0.35);
       // prSong6.loop();
@@ -251,7 +251,7 @@ function keyTyped() {
     }
   } else {
     if (key === '7') {
-      disneyPixarsMonstersInc.setVolume(1.0);
+      disneyPixarsMonstersInc.setVolume(0.75);
       disneyPixarsMonstersInc.play();
       // prSong7.setVolume(0.5);
       // prSong7.loop();
