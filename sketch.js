@@ -8,7 +8,7 @@ function preload() {
   disneysHercules = loadSound("assets/Hercules - The End.mp3");
   disneyPixarsMonstersInc = loadSound("assets/Monsters, Inc. - Put that thing back where it came from, or so help me!.mp3");
   disneySquareEnixsKH = loadSound("assets/The Afternoon Streets.mp3");
-  disneysPotC = loadSound("assets/The Caribbean - Davy Jones.mp3");
+  disneysPotC = loadSound("assets/Pirates of the Caribbean - At World's End - Hoist the Colours.mp3");
   disneysBigHero6 = loadSound("assets/Big Hero 6 - Immortals.mp3");
   prSong1 = loadSound("assets/Peacock Dance Display - Sound 1.mp3");
   prSong2 = loadSound("assets/Peacock Dance Display - Sound 2.mp3");
@@ -192,7 +192,7 @@ function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
       disneysPotC.setVolume(0.375);
-      disneysPotC.play();
+      disneysPotC.loop();
       // prSong1.setVolume(0.25);
       // prSong1.loop();
     } else if (key === 'a') {
