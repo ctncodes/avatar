@@ -188,6 +188,10 @@ function drawPedestal() {
   square(330,480,120);
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
@@ -260,8 +264,4 @@ function keyTyped() {
       // prSong7.stop();
     }
   }
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
