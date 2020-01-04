@@ -51,26 +51,26 @@ function draw() {
   translate(windowWidth/2 - 300, windowHeight - 450);
   drawBeautifulBody();
   drawBeautifulMind();
-  // if (key == '1' || key == '2' || key == '3' || key == '4' || key == '5' || key == '6' || key == '7') {
-  //   //Waddle
-  //   fill(227,38,54);
-  //   beginShape();
-  //   curveVertex(468,198);
-  //   curveVertex(468,198);
-  //   curveVertex(468,240);
-  //   curveVertex(492,234);
-  //   curveVertex(468,198);
-  //   curveVertex(468,198);
-  //   endShape();
-  //   //Beak
-  //   fill(218,165,32);
-  //   triangle(468,120,468,150,528,150);
-  //   triangle(468,210,468,180,528,180);
-  //   //Open Beak
-  //   fill(0);
-  //   rect(468,150,8,30);
-  // } else {
-  //   //Waddle
+  if (key == '1' || key == '2' || key == '3' || key == '4' || key == '5' || key == '6' || key == '7') {
+    //Waddle
+    fill(227,38,54);
+    beginShape();
+    curveVertex(468,198);
+    curveVertex(468,198);
+    curveVertex(468,240);
+    curveVertex(492,234);
+    curveVertex(468,198);
+    curveVertex(468,198);
+    endShape();
+    //Beak
+    fill(218,165,32);
+    triangle(468,120,468,150,528,150);
+    triangle(468,210,468,180,528,180);
+    //Open Beak
+    fill(0);
+    rect(468,150,8,30);
+  } else {
+    //Waddle
     fill(227,38,54);
     beginShape();
     curveVertex(468,168);
@@ -83,7 +83,7 @@ function draw() {
     //Beak
     fill(218,165,32);
     triangle(468,120,468,180,528,150);
-  // }
+  }
   pop();
   musicNote1.display();
   musicNote1.move();
