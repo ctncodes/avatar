@@ -8,11 +8,14 @@ class MusicStaff{
     noStroke();
     fill(255);
     translate(this.xPos,this.yPos);
-    // rect(0,0,60,50);
-    // rect(131.25,37.5,60,50);
-    // rect(52.5,-75,108.75,50);
-    // rect(52.5,-75,15,112.5);
-    // rect(146.25,-75,15,112.5);
+    rect(0,0,width,20);
+    rect(0,80,width,20);
+    rect(0,160,width,20);
+    rect(0,240,width,20);
+    rect(0,320,width,20);
+    rect(0,0,20,340);
+    rect(0,width-20,20,340);
+    rect();
     pop();
   }
 }
