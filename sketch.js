@@ -44,6 +44,7 @@ function setup() {
 function draw() {
   northX=mouseX;
   westY=mouseY;
+  noStroke();
   drawTheMorning(northX,westY);
   push();
   translate(windowWidth/2 - 300, windowHeight - 450);
@@ -83,14 +84,15 @@ function draw() {
     triangle(468,120,468,180,528,150);
   }
   pop();
-  musicNote1.display();
-  musicNote1.move();
-  musicNote2.display();
-  musicNote2.move();
-  musicNote3.display();
-  musicNote3.move();
-  musicNote4.display();
-  musicNote4.move();
+  drawMusicStaff();
+  // musicNote1.display();
+  // musicNote1.move();
+  // musicNote2.display();
+  // musicNote2.move();
+  // musicNote3.display();
+  // musicNote3.move();
+  // musicNote4.display();
+  // musicNote4.move();
 }
 function drawTheMorning(xPos,yPos) {
   if (mouseX <= width/7) {
@@ -177,7 +179,6 @@ function drawBeautifulMind() {
   circle(450,105,24);
 }
 function drawPedestal() {
-  //Pedestal
   fill(72,6,7);
   rect(75,450,450,30);
   rect(131.25,480,337.5,120);
@@ -185,11 +186,19 @@ function drawPedestal() {
   square(150,480,120);
   square(330,480,120);
 }
-
+function drawMusicStaff() {
+  fill(255);
+  rect(0,height/2-150,width,20);
+  rect(0,height/2-80,width,20);
+  rect(0,height/2-10,width,20);
+  rect(0,height/2+60,width,20);
+  rect(0,height/2+130,width,20);
+  rect(0,height/2-150,10,300);
+  rect(width-10,height/2-150,10,300);
+}
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
-
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
