@@ -1,7 +1,5 @@
-let northX, westY, musicNote1, musicNote2, musicNote3,
- musicNote4, lines5Spaces4, art1, art2, art3, art4;
-let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5,
- eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
+let northX, westY, musicNote1, musicNote2, musicNote3, musicNote4, art1, art2, art3, art4;
+let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
 function preload() {
   soundFormats('mp3');
   disneyPixarsToyStory = loadSound("assets/Toy Story 2 - You've Got A Friend in Me (Wheezy's version)");
@@ -31,7 +29,6 @@ function setup() {
   musicNote2 = new WholeNote(75,75);
   musicNote3 = new HalfNote(37.5,375);
   musicNote4 = new QuarterNote(225,525);
-  // lines5Spaces4 = new MusicStaff(width/2 - 170,0);
   eagleEye1 = new TailFeatherPattern(46.875,121.875);
   eagleEye2 = new TailFeatherPattern(46.875,215.625);
   eagleEye3 = new TailFeatherPattern(131.25,75);
@@ -94,7 +91,6 @@ function draw() {
   musicNote3.move();
   musicNote4.display();
   musicNote4.move();
-  // lines5Spaces4.display();
 }
 function drawTheMorning(xPos,yPos) {
   if (mouseX <= width/7) {
