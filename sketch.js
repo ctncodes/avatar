@@ -195,6 +195,9 @@ function drawMusicStaff() {
   rect(0,height/2+130,width,20);
   rect(0,height/2-150,10,300);
   rect(width-10,height/2-150,10,300);
+  rect(width/2-5,height/2-150,10,300);
+  rect(width/4-5,height/2-150,10,300);
+  rect(width*3/4-5,height/2-150,10,300);
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
