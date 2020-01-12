@@ -1,4 +1,4 @@
-let northX, westY, musicNote1, musicNote2, musicNote3, musicNote4, grandStaff, art1, art2, art3, art4;
+let northX, westY, musicNote1, musicNote2, musicNote3, musicNote4, rt1, art2, art3, art4;
 let eagleEye1, eagleEye2, eagleEye3, eagleEye4, eagleEye5, eagleEye6, eagleEye7, eagleEye8, eagleEye9, eagleEye10, eagleEye11;
 function preload() {
   soundFormats('mp3');
@@ -29,7 +29,6 @@ function setup() {
   musicNote2 = new WholeNote(75,75);
   musicNote3 = new HalfNote(37.5,375);
   musicNote4 = new QuarterNote(225,525);
-  grandStaff = new MusicStaff(0,height/2 - 150);
   eagleEye1 = new TailFeatherPattern(46.875,121.875);
   eagleEye2 = new TailFeatherPattern(46.875,215.625);
   eagleEye3 = new TailFeatherPattern(131.25,75);
@@ -85,8 +84,7 @@ function draw() {
     triangle(468,120,468,180,528,150);
   }
   pop();
-  // drawMusicStaff();
-  grandStaff.display();
+  drawMusicStaff();
   // musicNote1.display();
   // musicNote1.move();
   // musicNote2.display();
