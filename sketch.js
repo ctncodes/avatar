@@ -187,7 +187,9 @@ function drawPedestal() {
   square(330,480,120);
 }
 function drawMusicStaff() {
-  fill(255);
+  strokeWeight(5);
+  stroke("#B24D40");
+  fill("#C9B665");
   rect(0,height/2-150,width,20);
   rect(0,height/2-80,width,20);
   rect(0,height/2-10,width,20);
