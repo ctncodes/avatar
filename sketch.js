@@ -206,74 +206,103 @@ function windowResized() {
 }
 function keyTyped() {
   if (mouseX <= width/7) {
-    if (key === '1') {
-      disneysPotC.setVolume(0.375);
-      disneysPotC.loop();
-      // prSong1.setVolume(0.25);
-      // prSong1.loop();
-    } else if (key === 'a') {
-      disneysPotC.stop();
-      // prSong1.stop();
+    if (key === 'a') {
+      prSong1.setVolume(0.25);
+      prSong1.loop();
+    } else if (key === 'b') {
+      prSong1.stop();
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
-    if (key === '2') {
-      disneySquareEnixsKH.setVolume(0.525);
-      disneySquareEnixsKH.play();
-      // prSong2.setVolume(0.35);
-      // prSong2.loop();
-    } else if (key === 'b') {
-      disneySquareEnixsKH.stop();
-      // prSong2.stop();
+    if (key === 'c') {
+      prSong2.setVolume(0.35);
+      prSong2.loop();
+    } else if (key === 'd') {
+      prSong2.stop();
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
-    if (key === '3') {
-      disneysHercules.setVolume(0.525);
-      disneysHercules.play();
-      // prSong3.setVolume(0.35);
-      // prSong3.loop();
-    } else if (key === 'c') {
-      disneysHercules.stop();
-      // prSong3.stop();
+    if (key === 'g') {
+      prSong3.setVolume(0.35);
+      prSong3.loop();
+    } else if (key === 'h') {
+      prSong3.stop();
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
-    if (key === '4') {
-      disneyPixarsToyStory.setVolume(0.525);
-      disneyPixarsToyStory.play();
-      // prSong4.setVolume(0.35);
-      // prSong4.loop();
-    } else if (key === 'd') {
-      disneyPixarsToyStory.stop();
-      // prSong4.stop();
+    if (key === 'i') {
+      prSong4.setVolume(0.35);
+      prSong4.loop();
+    } else if (key === 'j') {
+      prSong4.stop();
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
-    if (key === '5') {
-      disneysBigHero6.setVolume(0.375);
-      disneysBigHero6.play();
-      // prSong5.setVolume(0.25);
-      // prSong5.loop();
-    } else if (key === 'e') {
-      disneysBigHero6.stop();
-      // prSong5.stop();
+    if (key === 'k') {
+      prSong5.setVolume(0.25);
+      prSong5.loop();
+    } else if (key === 'l') {
+      prSong5.stop();
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
-    if (key === '6') {
-      disneySquareEnixsKH.setVolume(0.525);
-      disneySquareEnixsKH.play();
-      // prSong6.setVolume(0.35);
-      // prSong6.loop();
+    if (key === 'e') {
+      prSong6.setVolume(0.35);
+      prSong6.loop();
     } else if (key === 'f') {
-      disneySquareEnixsKH.stop();
-      // prSong6.stop();
+      prSong6.stop();
     }
   } else {
-    if (key === '7') {
+    if (key === 'm') {
+      prSong7.setVolume(0.5);
+      prSong7.loop();
+    } else if (key === 'n') {
+      prSong7.stop();
+    }
+  }
+  if (mouseX <= width/7) {
+    if (key === 'o') {
+      disneysPotC.setVolume(0.375);
+      disneysPotC.loop();
+    } else if (key === 'p') {
+      disneysPotC.stop();
+    }
+  } else if (mouseX > width/7 && mouseX <= width*2/7) {
+    if (key === 'q') {
+      disneySquareEnixsKH.setVolume(0.525);
+      disneySquareEnixsKH.play();
+    } else if (key === 'r') {
+      disneySquareEnixsKH.stop();
+    }
+  } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
+    if (key === 'u') {
+      disneysHercules.setVolume(0.525);
+      disneysHercules.play();
+    } else if (key === 'v') {
+      disneysHercules.stop();
+    }
+  } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
+    if (key === 'w') {
+      disneyPixarsToyStory.setVolume(0.525);
+      disneyPixarsToyStory.play();
+    } else if (key === 'x') {
+      disneyPixarsToyStory.stop();
+    }
+  } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
+    if (key === 'y') {
+      disneysBigHero6.setVolume(0.375);
+      disneysBigHero6.play();
+    } else if (key === 'z') {
+      disneysBigHero6.stop();
+    }
+  } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
+    if (key === 's') {
+      disneySquareEnixsKH.setVolume(0.525);
+      disneySquareEnixsKH.play();
+    } else if (key === 't') {
+      disneySquareEnixsKH.stop();
+    }
+  } else {
+    if (key === '?') {
       disneyPixarsMonstersInc.setVolume(0.75);
       disneyPixarsMonstersInc.play();
-      // prSong7.setVolume(0.5);
-      // prSong7.loop();
-    } else if (key === 'g') {
+    } else if (key === '!') {
       disneyPixarsMonstersInc.stop();
-      // prSong7.stop();
     }
   }
 }
