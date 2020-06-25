@@ -207,97 +207,73 @@ function windowResized() {
 function keyTyped() {
   if (mouseX <= width/7) {
     if (key === '1') {
+      disneysPotC.setVolume(0.375);
+      disneysPotC.loop();
       prSong1.setVolume(0.25);
       prSong1.loop();
     } else if (key === 'a') {
+      disneysPotC.stop();
       prSong1.stop();
     }
   } else if (mouseX > width/7 && mouseX <= width*2/7) {
     if (key === '2') {
+      disneySquareEnixsKH.setVolume(0.525);
+      disneySquareEnixsKH.play();
       prSong2.setVolume(0.35);
       prSong2.loop();
     } else if (key === 'b') {
+      disneySquareEnixsKH.stop();
       prSong2.stop();
     }
   } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
     if (key === '3') {
+      disneysHercules.setVolume(0.525);
+      disneysHercules.play();
       prSong3.setVolume(0.35);
       prSong3.loop();
     } else if (key === 'c') {
+      disneysHercules.stop();
       prSong3.stop();
     }
   } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
     if (key === '4') {
+      disneyPixarsToyStory.setVolume(0.525);
+      disneyPixarsToyStory.play();
       prSong4.setVolume(0.35);
       prSong4.loop();
     } else if (key === 'd') {
+      disneyPixarsToyStory.stop();
       prSong4.stop();
     }
   } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
     if (key === '5') {
+      disneysBigHero6.setVolume(0.375);
+      disneysBigHero6.play();
       prSong5.setVolume(0.25);
       prSong5.loop();
     } else if (key === 'e') {
+      disneysBigHero6.stop();
       prSong5.stop();
     }
   } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
     if (key === '6') {
+      disneySquareEnixsKH.setVolume(0.525);
+      disneySquareEnixsKH.play();
       prSong6.setVolume(0.35);
       prSong6.loop();
     } else if (key === 'f') {
+      disneySquareEnixsKH.stop();
       prSong6.stop();
     }
   } else {
     if (key === '7') {
+      disneyPixarsMonstersInc.setVolume(0.75);
+      disneyPixarsMonstersInc.play();
       prSong7.setVolume(0.5);
       prSong7.loop();
     } else if (key === 'g') {
+      disneyPixarsMonstersInc.stop();
       prSong7.stop();
     }
   }
 }
-
-// function mousePressed() {
-//   if (mouseX <= width/7) {
-//       disneysPotC.setVolume(0.375);
-//       disneysPotC.loop();
-//     } else if (mouseX > width/7 && mouseX <= width*2/7) {
-//       disneysPotC.stop();
-//   }
-//   if (mouseX > width/7 && mouseX <= width*2/7) {
-//       disneySquareEnixsKH.setVolume(0.525);
-//       disneySquareEnixsKH.play();
-//     } else if (mouseX > width*2/7 && mouseX <= width*3/7) {
-//       disneySquareEnixsKH.stop();
-//   }
-//   if (mouseX > width*2/7 && mouseX <= width*3/7) {
-//       disneysHercules.setVolume(0.525);
-//       disneysHercules.play();
-//     } else if (mouseX > width*3/7 && mouseX <= width*4/7) {
-//       disneysHercules.stop();
-//   }
-//   if (mouseX > width*3/7 && mouseX <= width*4/7) {
-//       disneyPixarsToyStory.setVolume(0.525);
-//       disneyPixarsToyStory.play();
-//     } else if (mouseX > width*4/7 && mouseX <= width*5/7) {
-//       disneyPixarsToyStory.stop();
-//   }
-//   if (mouseX > width*4/7 && mouseX <= width*5/7) {
-//       disneysBigHero6.setVolume(0.375);
-//       disneysBigHero6.play();
-//     } else if (mouseX > width*5/7 && mouseX <= width*6/7) {
-//       disneysBigHero6.stop();
-//   }
-//   if (mouseX > width*5/7 && mouseX <= width*6/7) {
-//       disneySquareEnixsKH.setVolume(0.525);
-//       disneySquareEnixsKH.play();
-//     } else if (mouseX > width*6/7) {
-//       disneySquareEnixsKH.stop();
-//   }
-//   if (mouseX > width*6/7) {
-//       disneyPixarsMonstersInc.setVolume(0.75);
-//       disneyPixarsMonstersInc.play();
-//     } else if (mouseX <= width/7) {
-//       disneyPixarsMonstersInc.stop();
-//   }
-// }
